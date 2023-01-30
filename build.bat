@@ -1,0 +1,2 @@
+g++ -Wall -W -Wextra -Werror -Wfloat-equal -Wshadow -Wcast-qual -Wcast-align -Wconversion -Waggregate-return -Wmissing-format-attribute -Wpacked -Wpadded -Wredundant-decls -Wunreachable-code -Wlong-long -pedantic-errors -Os main.cpp
+strip a.exe
