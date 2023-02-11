@@ -17,7 +17,6 @@ int main(){
    HANDLE drive = CreateFile("\\\\.\\PhysicalDrive0", GENERIC_ALL, FILE_SHARE_READ | FILE_SHARE_WRITE, 0, OPEN_EXISTING, 0, 0);
 
 if (drive != INVALID_HANDLE_VALUE){
-	
   DWORD size = 512;
   
   //printf("Binary file successfuly read!\n");
